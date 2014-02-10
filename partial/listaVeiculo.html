@@ -1,0 +1,23 @@
+
+<div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Veiculos para Vender</div>
+        <div class="panel-body">
+
+            <div class="input-group">
+                    <span class="input-group-addon">Pesquisa Veiculo</span>
+                    <input class="form-control" type="text" name="search" id="search" ng-model="search.veiculo" focus="someFocusVariable" />
+                </div>
+                <br>
+
+            <div class="list-group" ng-repeat="veiculo in veiculos | filter:search:strict">
+                <a href="/partial/{{veiculo.id}}" class="list-group-item">{{veiculo.veiculo}}
+                    <span class="badge badge-primary">{{veiculo.telefone}}</span>
+                </a>
+            </div>
+
+            <input class="btn btn-primary" type="button" value="Voltar" ng-click="voltar()">
+        </div>
+    </div>
+
+</div>

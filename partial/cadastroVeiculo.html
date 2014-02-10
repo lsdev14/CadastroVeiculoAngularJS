@@ -1,0 +1,65 @@
+
+<div>
+
+    <form name="formVeiculo">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Cadastro de Veiculo</div>
+            <div class="panel-body">
+
+                <div class="input-group">
+                    <span class="input-group-addon">Veiculo</span>
+                    <input class="form-control" type="text" name="veiculo" id="veiculo" ng-model="veiculo" required ng-minlength="2" ng-maxlength="20" focus="someFocusVariable" />
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">Vendedor</span>
+                    <input class="form-control" type="text" name="vendedor" id="vendedor" ng-model="vendedor" required />
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">Telefone</span>
+                    <input class="form-control" type="text" name="telefone" id="telefone" ng-model="telefone" required />
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-addon">Valor</span>
+                    <input class="form-control" type="text" name="valor" id="valor" ng-model="valor" required />
+                </div>
+                <br>
+                                    <!--<div class="input-group">
+                                                                                <span class="input-group-addon">Interesse</span>
+                    
+                                                                                <div class="btn-group" data-toggle="buttons">
+                                                                                    <label class="btn btn-default">
+                                                                                        <input type="radio" value="vender" ng-model="interesse" ng-class="{}">Vender</label>
+                                                                                    <label class="btn btn-default">
+                                                                                        <input type="radio" value="comprar" ng-model="interesse">Comprar</label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <br>-->
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <span class="btn btn-primary btn-file">
+							Foto…<input id="fotoVeiculo" name="fotoVeiculo" type="file" multiple="">
+                        </span>
+                    </span>
+                    <input type="text" class="form-control" readonly="">
+                </div>
+                <br>
+                <div id="list">
+                  
+                </div>
+                <br>               
+                <p>
+                    <input class="btn btn-primary" type="button" value="Salvar" ng-click="salvarVeiculo()" ng-disabled="formVeiculo.$invalid">
+                    <input class="btn btn-primary" type="button" value="Voltar" ng-click="voltar()">
+                </p>
+
+                <!--<datalist id="listVeiculo" class="dropdown-menu"><option data-ng-repeat="vec in lstVeiculo" value="{{vec}}"></datalist>-->
+            </div>
+        </div>
+
+    </form>
+
+</div>
