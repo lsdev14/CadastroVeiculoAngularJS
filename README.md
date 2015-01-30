@@ -16,6 +16,3 @@ npm -g install httpster
 httpster
 ```
 * Carregar no browser o endereço http://localhost:3333
-
-
-*Teste-Pivotal-Tracker-GitHub-4
